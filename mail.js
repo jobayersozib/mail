@@ -21,14 +21,14 @@ app.get('/mail/:name/:phone/:email/:location/:message/:img/',jsonParser,function
     var transporter = nodemailer.createTransport({
           service: 'gmail',
           auth: {
-            user: 'cid.hotline@gmail.com',
+            user: 'jobayer@webpers.com',
             pass: 'Webpers123'
           }
         });
 
         var mailOptions = {
-          from: 'cid.hotline@gmail.com',
-          to: 'cid.hotline@gmail.com',
+          from: 'jobayer@webpers.com',
+          to: 'jobayer@webpers.com',
           subject: "Complain mail",
           html: '<h1>Name: '+req.params.name+'</h1><h2>Phone Number :'+req.params.phone+'<h2>E-mail :'+req.params.email+'<h2>Location :'+req.params.location+'</h2><p>Message :'+req.params.message+'</p>',
           attachments:[
@@ -62,14 +62,14 @@ app.post('/',jsonParser,function(req,res){
     var transporter = nodemailer.createTransport({
           service: 'gmail',
           auth: {
-            user: 'jobayer@webpers.com',
-            pass: 'webpersJobayer64'
+            user: 'cid.hotline@gmail.com',
+            pass: 'Webpers123'
           }
         });
 
         var mailOptions = {
-          from: 'jobayer@webpers.com',
-          to: 'jobayer@webpers.com',
+          from: 'cid.hotline@gmail.com',
+          to: 'cid.hotline@gmail.com',
           
           subject:"complain mail",
           html:'<h1>Name: '+req.body.name+'</h1><h2>Phone Number :'+req.body.phone+'<h2>E-mail :'+req.body.email+'<h2>Location :'+req.body.location+'</h2><p>Message :'+req.body.text+'</p>',
