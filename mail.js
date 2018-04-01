@@ -22,7 +22,7 @@ app.get('/mail/:name/:phone/:email/:location/:message/:img/',jsonParser,function
           service: 'gmail',
           auth: {
             user: 'jobayer@webpers.com',
-            pass: 'webpersJobayer64'
+            pass: '**********'
           }
         });
 
