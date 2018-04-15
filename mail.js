@@ -63,7 +63,7 @@ app.post('/',jsonParser,function(req,res){
           service: 'gmail',
           auth: {
             user: 'jobayer@webpers.com',
-            pass: 'webpersJobayer64'
+            pass: '***********'
           }
         });
 
