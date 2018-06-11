@@ -23,7 +23,7 @@ app.get('/mail/:name/:phone/:email/:location/:message/:img/',jsonParser,function
           auth: {
             user: 'jobayer@webpers.com',
 
-            pass: 'c11dm4xp0rt'
+            pass: ''
           }
         });
 
@@ -65,7 +65,7 @@ app.post('/',jsonParser,function(req,res){
           auth: {
 
             user: 'cid.hotline@gmail.com',
-            pass: 'c11dm4xp0rt'
+            pass: ''
 
           }
         });
