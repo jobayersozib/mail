@@ -22,7 +22,11 @@ app.get('/mail/:name/:phone/:email/:location/:message/:img/',jsonParser,function
           service: 'gmail',
           auth: {
             user: 'jobayer@webpers.com',
+<<<<<<< HEAD
             pass: 'Webpers123'
+=======
+            pass: '**********'
+>>>>>>> e09cb7ff4c8e778b60e9de08e29e2befe52d79c9
           }
         });
 
@@ -62,8 +66,13 @@ app.post('/',jsonParser,function(req,res){
     var transporter = nodemailer.createTransport({
           service: 'gmail',
           auth: {
+<<<<<<< HEAD
             user: 'cid.hotline@gmail.com',
             pass: 'c11dm4xp0rt'
+=======
+            user: 'jobayer@webpers.com',
+            pass: '***********'
+>>>>>>> e09cb7ff4c8e778b60e9de08e29e2befe52d79c9
           }
         });
 
